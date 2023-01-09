@@ -1,0 +1,67 @@
+DOCKER CRASH COURSE - THE NET NINJA
+
+  WHAT IS DOCKER?
+    - docker is a platform designed to help developers build, share, and run modern applications
+    - docker handle the tedius setup, so we can focus on the code
+    - docker is a platform for developing, shipping, and running applications, enables us to separate our applications from our insfrastructure so we can deliver software quickly, with docer we manage our insfrastructure in the same ways we manage our applications
+    - docker is an open source platform for building, deploying, and managing containerized applications
+    - docker is an open source platform that enables developers to build, deploy, run, update and manage containers--standarized, executable components that combine application source code with the operating system (os) libraries and dependencies required to run that code in any enviroment
+
+    - containers
+      - a docker container image is lightweight, standalone, executable package of software that includes everyhing needed to run an application: code, runtime, systems tool, system libraries and settings
+
+  CONTAINERS VS VIRTUAL MACHINES
+    - virtual mahcines:
+      - has it's own full operating system & typically slower
+
+    - containers:
+      - share the host's operating system & typically quicker
+
+    
+  INSTALL DOCKER FOR WINDOWS
+    WSL
+      - it's a windows subsystem for linux which basically allows us to run a full linux enviroment on windows without a virtual machine and it give us a way to run docker on our windows machines
+
+  DOCKER IMAGES
+    - like blueprints for containers
+      - runtime enviroment
+      - application code
+      - any dependencies
+      - extra configuration (e.g. env variables)
+      - commands
+      - includes every single thing that our application might need to run
+      - images are made up from serveral "layers"
+        1. parent image: includes the os & sometimes the runtime enviroment
+        2. source code
+        3. dependencies
+        4. run commands
+
+    CONTIANERS
+      - are runnable instances of those images
+      - container it's a process which run our application as we desecribe next
+      - also knows as isolated process meaning that they run independently from any process of our computer
+
+    IMAGES                    run         CONTAINER
+    runtime enviroment                   runing instance of an image
+    application code
+    any dependencies          -->     
+    extra configuration                   runs our application
+    commands
+
+    DOCKER FILE
+      - it's a set of instructions to docker to create an image
+      - list all different layers or instructuins to create those layers on an image
+
+    LAYER CASHING
+      - docker layer caching (dlc) is a great feature to use if builing docker images is a regular part of your ci/cd process, dlc will save images leayers created within your jobs, rather than impact the actual container used to run our job
+
+    VOLUMES
+      - are docker features to allows specifies folders on our host computer that can be available run containers, and we can map those folders run on our host computer to specifics folder inside the container, so it's something change in our computer that chane can also be reflected on the folders we map in the container
+
+
+    DOCKER COMPOSE
+      - it's a tool that comes fully integrated into docker
+      - give us a way to make a single docker compose file wich contains all container configuration about our projects
+      - we outline the port mappings volumes container names, etc, and that one single file will configure all the diferente containers that we want to run that are part of the same project essentially, so maybe de database, backend and frontend
+      - docker compose is a tool that was developed to help define and share multi-container applications, with compose, we can create a yaml file to define the services and with a single command, can spin everything up or tear it all down
+      - with docker with can create this images and share with people and those images are going to contain all the dependencies, eviroments nedeed, etc and when a user a user downloaded the image runs it on their computer, it's gona create that container that isolated enviroment and run the image the applications exactly runs the same way as it would be run on their computer before, regardless of what versions of anything the have installed on their own computer so it keeps that kind of synchronicity between different people running the applications everyhing is going to be predictable running in those isolated containers which is awesome

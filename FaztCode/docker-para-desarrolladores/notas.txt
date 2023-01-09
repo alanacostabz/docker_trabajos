@@ -1,0 +1,174 @@
+DOCKER PARA DESARROLLADORES (VISUAL CODE, DEVCONTAINERS, GITHUB CODESPACES, COMPOSE, ETC)
+
+
+  DEVELOPMENT ENVIROMENT
+    - un entorno de desarrollo es un conjunto de procedimientos y herramientas que se utilizan para desarrollar un código fuente o programa
+    - integrated developement enviroment (ide) es una aplicacion de software que ayuda a los programadores a desarrollar codigo de software de manera eficiente, aumenta la productividad de los desarrolladores al combinar capacidades como editar, crear, probar y empaquetar software en una aplicacion facil de usar
+
+  VIRTUAL MACHINE (VIRTUALBOX, VMWARE)
+    - una maquina virtual es un software que simula un sistema de computacion y puede ejecutar programas como si fuese una computadora real, son una tecnologia que permite crear multiples entornos simulados o recursos dedicados desde un solo sistema de hardware fisico, permite automatizar, gestionar y modernizar todas las cargas de trabaho de virtualizacion
+
+      - virtual box: perteneciente a oracle, es un softwware de virtualzación multiplataforma de código abierto más popular del mundo, permite a los desarrolladores entregar código mas rápido, ya que permite ejecutar múltiples sistemas operativos en un solo dispositivo, es un software de virtulazación para arquitecturas x86/amd64
+
+      - vmware workstation: es una línea de productos de hipervisor de escritorio que permiten a los usuarios ejecutar maquinas virtuales, contenedores, y clústeres de kubernets, proporciona software de virtulazación disponible para ordernadores compatibles x86
+
+  HYPERVISOR
+    - tambien conicido como monitor de maquina virtual, es una capa de software para realizar una virtualización de hardware, permite utilizar al mismo tiempo, diferentes sistemas operativos en una misma computadora
+    - es un poroceso que crea y ejecuta maquinas virtuales, un hipervisor permite que un ordenador host preste soporte a varias maquinas virtuales invitadas mediante el uso compartido virutal de sus recursos, como la memoria y el procesamiento
+
+  CONTAINER
+    - un contenedor de docker es conocido contenedor ejecutable, independiente, ligero que integra todo lo necesario para ejecutar una aplicacion, incluidas bibliotecas, herramientas del sistema, codigo y tiempo de ejecucion
+    - un docker image es un paquete de software ligero, independiente y ejecutable que incluye todo lo necesario para ejecutar una aplicacion: código, tiempo de ejecucion herramientas del sistema, bibliotecas del sistema y configuraciones
+
+  IMAGE
+    - una imagen de docker es una plantilla de solo lectura que define su contenedor, la imagen contiene codigo que se ejecutará, incluida cualquier definición para cualquier biblioteca o dependencia que el codigo necesite, un contenedor de docker es una imagen de docker instanciada (en ejecucion)
+
+  ENGINE
+    - docker engine tambien conocido como docker daemon, es la capa que tiene la función  de encargarse de todo lo relacionado con el sistema operativo y los contenedores de docker, esta tecnologia se basa en la contenedorizacion de tipo open spurce, que contribuye a crear y contener las aplicaciones del usuario
+
+  VIRTUAL MACHINE VS CONTAINER
+    - la diferencia clave entre los contenedores y las maquinas virtuales es que estas virtualizan toda una máquina hasta las capas de hardware, y los contenedores solo virtualizan las capas de software por encima del nivel del sistema operativo
+
+  DOCKER
+    - es un proyecto de codigo abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstraccion y automatización de virtualizacion de aplicaciones entre multiples sistemas operativos
+    - docker es un sistema operativo (o runtime) para contenedores, el motor de docker se instala en cada servidor en el que se desee ejecutar contenedores y proporciona un conjunto sencillo de comandos que se pueden utilizar para crear, iniciar o detener contenedores
+    - lo que hace docker es ahorrar espacio en la máquina y generar un contenedor en el que además se almacena la aplicación, guarda todos aquellos recursos que necesita para que pueda ser ejecutada
+
+  INSTALACION REQUERIMENTOS
+
+    WSL 2 BACKEND:
+      - es el subsistema de windows para linux que permite a los desarrolladores ejecutar un entorno de gnu/linux, incluida la mayoría de herramientas de líneas de comandos, utilidades y aplicaciones, directamente en windows, sin modificar y sin la sobrecarga de una máquina virtual tradicional o configuración de arranque dual
+      - windows subsystem for linux
+      - nos permite instalar sistemas como debian o ubuntu dentro de windows
+
+    HYPER-V
+      - es el producto de virtualzación de hardware de microsoft, permite crear y ejecutar una versión de software de un equipo, denominada maquina virutal, cada maquina virtual actúa como un equipo completo, ejecutando un sistema operativo y programas
+      - es un programa de virtualización de microsoft basado en n hipervisor para los sistemas de 64 bits con los procesadores basados en amd-v o intel vt
+
+    COMANDOS DOCKER
+      - docker pull
+      - docker images
+      - docker run
+      - docker exec
+      - docker ps
+      - docker start
+      - docker build
+      - docker create
+      - docker image rm
+      - docker container rm
+      - docker system prune -a
+      - docker login
+      - docker push
+
+      - docker compose 
+      - docker compose up
+      - docker compose down
+
+    DOCKER IMAGE
+      - es una plantilla d solo lectura que define su contenedor, la imagen contiene el codigo que se ejecutará, incluida cualquier definicion para cualquier biblioteca o dependencia que el código necesite, un contenedor de docker es una imagen de docker instanciada en ejecución
+      - es una representación estática de la apicación o el servicio y de su configuración y las dependencias, para ejecutar la aplicación o el servicio, se crea una instancia de la aplicacion para crear un contenedor que se ejecutará en el host de docker
+
+    
+    UNIX
+       - es un sistema operativo portable, multitarea y multiusuario, desarrollado en 1969 por un grupo de empleados de los laboratorios bell de at&t
+       - unix es un sistema operativo que nace a principios de los años 70, creado principalmente por dennis ritchie y ken thompson, sus caracteristicas técnicas principales son: su portabilidad, su capacidad  multiusuario y multitarea su eficiencia, su alta seguridad y su buen desempeño en tareas de red
+
+    SHELL
+      - shell o intérprete de órdenes o intérprete de comandos es el programa informático que provee una interfaz de usuario para acceder a los servicios del sistema operativo, dependiendo del tipo de interfaz que empleen, los shells pueden ser: de lineas de texto, gráficos, de lenguaje natural
+
+    BASH
+      - gnu bash o simplemente bash es una popular interfaz de usuario de linea de comandos, especificamente un shell de unix; asi como un lenguaje de scripting
+      - acrónimo de bourne-again shell es un intérprete de comandos y lenguaje de programación integrado que corre bajo el macroprocesador shell de unix
+      - este programa ejecuta una de las ordenes que el usuario pone en una ventana de texto o las que se encuentran contenidoas en un script o bash script (archivo con todas las instrucciones), para luevo devolver resultados
+      - fue diseñado por stepehen bourne en 1977
+
+    SSH
+      - ssh o secure shell es un protocolo que facilita las comunicaciones seguras entre dos sistemas usando una arquitectura cliente/servidor y que permite a los usuarios conectarse a un host remotamente
+
+    ZSH
+      - tambien llamado z hell, es una version extendida de bourne shell (sh), con muchas carácteristicas nuevas y soporte para plugins y temas, dado que se basa en el mismo shell que bash, zsh tiene las mimas carácteristicas, Z shell es un potente intérprete de comandos para sistemas operativos de tipo Unix
+
+    DOCKER FILE
+      - es un archivo de texto que contiene las instrucciones necesarias para crear una nueva imagen en el contendor
+      - es un archivo o documento de texto simple que incluye una serie de instrucciones que se necesitan para ejecutar de manera consecutiva para cumplir con los procesos necesarios para la creación de una nueva imágen
+
+    PROXY
+      - es un programa o dispositivo que hace de intermediario entre las peticiones o recuros que realiza un cliente a otro servidor
+      - es una tecnologia que se utiliza como puente entre el origen (un ordenador) y el destino de una solicitud (internet), generalmente se trata de un dispositivo u ordenador intermedio que nos permite conectarnos a internet de una manera indirecta
+
+    APACHE
+      - es un servidor web http de código abierto, está desarrollado y mantenido por una comunidad de usuarios en torno a la apache software foundation, garantiza el rendimiento, estabilidad y seguridad de un servidor web
+      - El servidor HTTP Apache es un servidor web HTTP de código abierto, para plataformas Unix, Microsoft Windows, Macintosh y otras, que implementa el protocolo HTTP/1.1 y la noción de sitio virtual según la normativa RFC 2616. 
+
+    NGIX
+      - es un servidor web open source de alta performance que ofrece el contenido estático de un sitio web de forma rápida y fácil de configurar, ofrece recuros de equilibirio de carga, proxy inverso y streaming, además de gestionar miles de conexiones simultáneas
+      - la capacidad de nginx de actuar, además de como servidor web, como proxy de correo electrónico, proxy inverso con caché y balanceador de carga, le otorga además una funcionalidad adicional en varios campos, ampliando asi su actrativo
+
+    LOAD BALANCER
+      - el balanceador de carga es un concepto usado en admnistración de sistemas informáticos que se refieren a la técnica usada para compartir el trabajo a realizar entre varios ordenadores, procesos, discos u otros recursos
+
+    CURL
+    - cURL es un proyecto de software consistente en una biblioteca y un intérprete de comandos orientados a la transferencia de archivos, soporta protocolos fto, ftps, http, https, tftp, scp, sftp, telnet, dict, file y ldap entre otros
+    - es una abreviatura de cliente url y es una herramienta de línea de comandos utilizada para la transferencia de ficheros con formato url
+    
+    CODESPACES
+      - es como vs code inscrustado dentro de github o docker, por lo que nos da la posibilidad de editar nuestro código, depurarlo, compilarlo e incluso desplegarlo
+
+    DOCKER COMPOSE
+      - docker compose es una herramienta para definir y ejecutar aplicaciones de docker en varios contenedores, en compose, se usa un archivo yaml para configurar los servicios de la aplicacion, despues con un solo comando se crean y se inician todos los servicios de la aplicacion
+
+    YAML
+      - es un formato de serialización de datos legible por humanos inspirado en lenguajes como xml, c, python, perl, asi como en el formato de los correos electronicos
+      - el fichero yaml es un lenguaje de declaración de datos que facilita la legibilidad y la capacidad de escritura del usuario, este formato de serialización de datos se encarga de almacenar archivos de configuracion y se puede usar junto con todos los lenguajes de programación
+
+    DOCKER COMPOSE YML
+    DOCKER COMPOSE PROD YML
+      - el archivo compose en un archivo yaml que define servicios, redes y volumenes para una aplicacion docker
+      - docker compose es una herramienta que se desarrolló para ayudar a definir y compartir aplicaciones de varios contenedores, con compose podemos crear un archivo yaml para definir los servicios y con un solo comando podemos activar o desactivar 
+
+    DOCKER HUB
+      - es un repositorio en linea de docker images (como github pero para docker) y contiene cientos de imágenes principales prefabricadas que se pueden usar como la primera capa en nuestras propias imagenes
+      - es el repositorio de imágenes para contenedores más grande del sector it, ya que aloja la mayor cantidad de imágenes oficiales de la platraforma
+      - es el repositorio del cual docker toma las imágenes mediante las cual provisiona nuestros contenedores en donde nuestra aplicacion reside
+
+    CMD
+      - el simbolo del sistema ( ein inglés, 'command prompt', también conocido como cmd.exe o simplemente cmd) es el interpréte de comandos en os/2 y sistemas basados en windows, es un programa informático que tiene la capacidad de traducir las ordenes que introducen los usuarios un conjunto de instrucciones facilitadas por el mismo directamente al nucleo y al conjunto de herramientas que forman el sistema operativo
+
+    POWERSHELL
+      - es una solución de automatizacion de tareas multiplataforma formada por un shell de línea de comandos, un lenguaje de scripting y un marco de administracion de configuracion, funciona en windows 10, linux y macos
+      - es una interfaz de consola con al posibilidad de escritura y union de comandos por medio de instrucciones, esta interfaz de consola está diseñada para su uso por parte de administradores de sistemas con el proposito de automatizar tareas o realizarlas de forma más controlada
+
+    POWERSHELL VS CMD
+      - cmd es más para ejecutar comandos que sean básicos de dos, limitado en cuanto a términos de capacidad, ya que no permite acceder a funciones de administración del mismo sistema, cmd no permite componer scripts complejos, a diferencia que con powershell si se puede
+      - cmd se usa principalmente para ejecutar comandos batch, solucionar algunos problemas principales, mientras que powershell se puede usar para ejecutar comandos batch también con fines administrativos, los scripts también se pueden escribir en powershell para automatizar las tareas, powershell también tiene un ise que facilita la escritura y la depuracion de scripts
+
+    KUBERNETS
+      - es una plataforma portable y extensible de código abierto para administrar cargas de trabajo y servicios, kubernetes facilita la automatizacion y la configuración declarativa, tiene un exosistema grande y en rapido crecimiento
+      - también conocido como K8s, es una plataforma de código abierto que se utiliza para administrar contenedores de Linux en entornos de nube privada, pública e híbrida. Las empresas también pueden usar Kubernetes para administrar arquitecturas de microservicios
+      - Kubernetes es una plataforma de sistema distribuido de código libre para la automatización del despliegue, ajuste de escala y manejo de aplicaciones en contenedores​ que fue originalmente diseñado por Google y donado a la Cloud Native Computing Foundation
+
+    MICROSERVICIO
+      - La arquitectura de microservicios es una aproximación para el desarrollo de software que consiste en construir una aplicación como un conjunto de pequeños servicios, los cuales se ejecutan en su propio proceso y se comunican con mecanismos ligeros. 
+      - Los microservicios son un enfoque arquitectónico y organizativo para el desarrollo de software donde el software está compuesto por pequeños servicios independientes que se comunican a través de API bien definidas. Los propietarios de estos servicios son equipos pequeños independientes.
+
+    DOCKER DESKTOP 
+      - es una aplicación fácil de instalar para su entorno mac, linux o windows que le permite crear y comportar microservicios y aplicaciones en contenedores
+
+
+    KERNEL
+      - nucleo o kernel es un software que constituye una parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado
+      - es el nucleo que proporciona servicios básicos para todas las demas partes del sitema operativo, es la capa principal entre el sistema operativo y el hardware informático subyacente y ayuda en tareas como la gestión de procesos y memoria, sistemas de archivos, control de dispositivos y redes
+    
+    DISTRIBUCIÓN DE UN SISTEMA OPERATIVO
+      - una distribución de software, tambien conocido como software distro, es un conjunto de software especifico (o una coleccion de múltiple software, incluso un sistema operativo), ya compilado y configurado, generalmente pueden tomar formas de licencia, de entre la más usada es la licencia gpl o open spurce
+
+    DISTRIBUCIÓN DEL SISTEMA OPERATIVO LINUX
+      - una distribución gnu/linux es una distribución de software basada en el nucleo linux que incluye determinados paquetes de software para satisfacer las necesidades de un grupo especifico de usuarios, dando asi orgen a ediciones domesticas, empresariales para servidores
+      - una distribución o distro de linux no es más que una version personalizada del sistema operativo original, el kernel o núcleo linux
+
+    STDIN_OPEN Y TTY
+      - tty y stdin_open son analogos a los argumentos -t y -i para el comando de ejecucion de la ventana acoplable, respectivamente, utiliza stdin_open cuando necesita trabajar en un proyecto fuera del contenedor de docker, y se usa tty cuando necesitas trabajar en un proyecto dentro del contenedor de docker
+      - Para probar esto, intente ejecutar docker-compose up con tty o stdin_open pero no con ambos y encontrará que con stdin_open no inicia sesión en la terminal del contenedor mientras que ocurre lo contrario con tty.
+
+    SHARING IMAGES ON DOCKER
+      - crear repositorio
